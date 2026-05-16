@@ -1,9 +1,6 @@
-/target
 node_modules/
 dist/
-.build/
-.env
-.env.*
-!.env.example
 *.log
+.env
 .DS_Store
+coverage/
