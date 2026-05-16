@@ -1,0 +1,7 @@
+# Contributing to soroban-shield-cli
+
+```bash
+npm install
+npm test
+npm run lint
+```
