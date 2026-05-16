@@ -1,0 +1,6 @@
+use soroban_shield_contracts::contracts::access_control;
+use soroban_sdk::{Address, Env, Symbol};
+
+pub fn grant_admin(env: &Env, account: &Address, sender: &Address) {
+    access_control::grant_role(env, &Symbol::new(env, "admin"), account, sender);
+}
