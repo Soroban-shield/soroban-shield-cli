@@ -1,0 +1,9 @@
+use soroban_shield_contracts::contracts::reentrancy_guard;
+use soroban_sdk::Env;
+
+pub fn guarded<F>(env: &Env, f: F)
+where
+    F: FnOnce(&Env),
+{
+    reentrancy_guard::non_reentrant(env, f);
+}
