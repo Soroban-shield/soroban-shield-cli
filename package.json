@@ -1,0 +1,15 @@
+{
+  "name": "soroban-shield-cli",
+  "version": "0.1.0",
+  "description": "CLI to scaffold, audit, and deploy Soroban Shield contracts",
+  "bin": { "shield": "./dist/index.js" },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "lint": "eslint src --ext .ts"
+  }
+}
