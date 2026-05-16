@@ -1,0 +1,5 @@
+use soroban_shield_contracts::contracts::ownable;
+
+pub fn init_ownable(env: &soroban_sdk::Env, owner: &soroban_sdk::Address) {
+    ownable::initialize(env, owner);
+}
